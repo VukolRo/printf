@@ -6,15 +6,14 @@
 /*   By: shavok <shavok@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 19:12:54 by shavok            #+#    #+#             */
-/*   Updated: 2021/10/21 19:16:25 by shavok           ###   ########.fr       */
+/*   Updated: 2021/10/22 18:17:26 by shavok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libftprintf.h"
+#include "ft_printf.h"
 
 void	ft_put_prcnt(t_struct *s)
 
 {
-	write(1, '%', 1);
-	s->count_printed++;
+	s->count_printed += write(1, "%", 1);
 }
