@@ -6,7 +6,7 @@
 #    By: shavok <shavok@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/18 19:17:12 by shavok            #+#    #+#              #
-#    Updated: 2021/10/22 14:04:28 by shavok           ###   ########.fr        #
+#    Updated: 2021/10/22 18:42:10 by shavok           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,6 @@ clean	:
 
 fclean	:	clean
 	@rm -f $(NAME)
-	@make clean -C $(LIBFT_PATH)
+	@make fclean -C $(LIBFT_PATH)
 
 re		:	fclean all
