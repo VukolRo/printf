@@ -6,7 +6,7 @@
 #    By: shavok <shavok@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/18 19:17:12 by shavok            #+#    #+#              #
-#    Updated: 2021/10/22 18:42:10 by shavok           ###   ########.fr        #
+#    Updated: 2021/10/22 18:51:23 by shavok           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,6 @@ all		:	$(NAME)
 
 $(NAME)	:	$(OBJ)	$(HEADER)
 	make re -C $(LIBFT_PATH)
-#$(CC) $(CFLAGS) $(SRCS) -I $(HEADER)
 	ar rc $(NAME) $(OBJ) $(LIBFT_PATH)/*.o
 	ranlib $(NAME)
 
